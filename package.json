@@ -1,15 +1,16 @@
 {
-  "homepage" : "http://jmcmillar.github.io/youtube-api-search";
-  "name": "redux-simple-starter",
+  "homepage" : "http://jmcmillar.github.io/youtube-api-search",
+  "name": "YouTube search React/Redux",
   "version": "1.0.0",
-  "description": "Simple starter package for Redux with React and Babel support",
+  "description": "React Youtube Search",
   "main": "index.js",
-  "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
+  "repository": "git@github.com:jmcmillar/youtube-api-search.git",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
-    "build": "webpack -p --define process.env.NODE_ENV='\"production\"' --progress --colors"
+    "build": "webpack -p --define process.env.NODE_ENV='\"production\"' --progress --colors",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
