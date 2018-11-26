@@ -2,7 +2,7 @@ module.exports = {
   entry: ['./src/index.js'],
   output: {
     path: __dirname,
-    publicPath: '/',
+    publicPath: 'http://jmcmillar.github.io/youtube-api-search',
     filename: 'bundle.js'
   },
   module: {
